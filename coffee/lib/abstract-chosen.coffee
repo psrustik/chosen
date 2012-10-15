@@ -32,6 +32,7 @@ class AbstractChosen
     @disable_search = @options.disable_search || false
     @search_contains = @options.search_contains || false
     @choices = 0
+    @nowrap = @options.nowrap || false
     @single_backstroke_delete = @options.single_backstroke_delete || false
     @max_selected_options = @options.max_selected_options || Infinity
 

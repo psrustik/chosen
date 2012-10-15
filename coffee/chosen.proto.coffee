@@ -43,7 +43,13 @@ class Chosen extends AbstractChosen
     dd_top = @container.getHeight()
     dd_width = (@f_width - get_side_border_padding(@dropdown))
     
-    @dropdown.setStyle({"width": dd_width  + "px", "top": dd_top + "px"})
+    @dropdown.setStyle({"top": dd_top + "px"})
+
+    if @nowrap
+      dropdown.addClassName( "chzn-drop-nowrap")
+    else
+      @dropdown.setStyle({"width": dd_width  + "px"})
+
 
     @search_field = @container.down('input')
     @search_results = @container.down('ul.chzn-results')
@@ -58,7 +64,8 @@ class Chosen extends AbstractChosen
       @search_container = @container.down('div.chzn-search')
       @selected_item = @container.down('.chzn-single')
       sf_width = dd_width - get_side_border_padding(@search_container) - get_side_border_padding(@search_field)
-      @search_field.setStyle( {"width" : sf_width + "px"} )
+      if !@nowrap
+        @search_field.setStyle( {"width" : sf_width + "px"} )
     
     this.results_build()
     this.set_tab_index()

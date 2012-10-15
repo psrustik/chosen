@@ -1236,6 +1236,27 @@
       </code>
     </div>
 
+    <h2>Nowrap in options</h2>
+    <div class="side-by-side clearfix">
+
+      <div class="side-by-side clearfix">
+      <code>
+        $(".chzn-select").chosen({nowrap: true});
+      </code>
+        <select data-placeholder="Select bear" style="width:150px;" class="chzn-select-nowrap" tabindex="7">
+          <option value=""></option>
+          <option>American Black Bear (American Black Bear)</option>
+          <option>Asiatic Black Bear (Asiatic Black Bear)</option>
+          <option>Brown Bear</option>
+          <option>Giant Panda</option>
+          <option selected>Sloth Bear</option>
+          <option>Sun Bear</option>
+          <option>Polar Bear</option>
+          <option>Spectacled Bear (Spectacled Bear)</option>
+        </select>
+      </div>
+    </div>
+
     <h2>Limit Selected Options in Multiselect</h2>
     <div class="side-by-side clearfix">
       <p>You can easily limit how many options can user select:</p>
@@ -1327,7 +1348,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
   <script src="chosen/chosen.jquery.js" type="text/javascript"></script>
-  <script type="text/javascript"> $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true}); </script>
+  <script type="text/javascript"> $(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true}); $(".chzn-select-nowrap").chosen({nowrap:true});</script>
   </form>
 </body>
 </html>

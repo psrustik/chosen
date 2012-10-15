@@ -18,6 +18,20 @@
   box-shadow        : 0 4px 5px rgba(0,0,0,.15);
   z-index: 1010;
 }
+.chzn-container .chzn-drop.chzn-drop-nowrap{
+  min-width: 100%;
+  white-space: nowrap;
+  border-style:solid;
+  border-color:#AAAAAA;
+  border-width:1px;
+  border-top-right-radius:4px;
+}
+.chzn-container .chzn-drop.chzn-drop-nowrap input{
+  width:100%;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
 /* @end */
 
 /* @group Single Chosen */
