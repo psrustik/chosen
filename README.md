@@ -1,7 +1,7 @@
 # Chosen
 
 Chosen is a library for making long, unwieldy select boxes more user friendly.
-
+что за нафиг
 - jQuery support: 1.4+
 - Prototype support: 1.7+
 
